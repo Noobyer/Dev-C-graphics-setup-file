@@ -30,10 +30,14 @@ Create a new consol application in ".cpp" format and copy the codes given below,
 file you created and click "Build and Run" button or click "F9" key from your keyboard..
 
 #include<graphics.h>
-int main()
-{
-    int gd=DETECT,gm;
-    initgraph(&gd,&gm,"");
-    circle(200,200,100);
+
+int main( ){
+    initwindow( 400 , 400 , "Graphics using Dev-C++");
+    setcolor(YELLOW);
+    for(int i=5; i<=150; i+=5) {
+    circle(200, 200, i);
+    }
+        
     getch();
+    return 0;
 }
